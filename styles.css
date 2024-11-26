@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@keyframes ani {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -40vw 0;
+  }
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(26, 0, 36, 1) 33%,
+    rgba(59, 9, 121, 1) 60%
+  );
+}
+
+div {
+  background: url(clouds.png) repeat-x 0 / 100% auto;
+  height: 500px; /* this value is not important, just not zero */
+  animation: ani 10s linear infinite;
+  align-content: center; /* vertical centering*/
+  text-align: center;
+}
+
+div > h1.br {
+  font-size: 120px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 36%,
+    rgba(59, 9, 121, 1) 92%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: auto;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: -36px -16px 11px rgba(0, 0, 0, 0.62);
+}
